@@ -143,18 +143,34 @@ body {
 		color:@date-gray;
 		font-weight: normal;
 	}
-	.text-link-1st{
-		position:relative;
-		top:-40px;
-		max-width:400px;
-		overflow:hidden;
-		display:block;
-		white-space:nowrap;
-		text-overflow:ellipsis;
-		margin-left:10px;
-		margin-top: 10px;
-		margin-bottom:-10px;
-	}
+	@media screen and (min-device-width:439px) and (max-device-width: 10000px) { 
+		.text-link-1st{
+			position:relative;
+			top:-40px;
+			max-width:400px;
+			overflow:hidden;
+			display:block;
+			white-space:nowrap;
+			text-overflow:ellipsis;
+			margin-left:10px;
+			margin-top: 10px;
+			margin-bottom:-10px;
+		}
+    }
+    @media screen and (min-device-width:0px) and (max-device-width: 438px) { 
+		.text-link-1st{
+			position:relative;
+			top:-30px;
+			max-width:400px;
+			overflow:hidden;
+			display:block;
+			white-space:nowrap;
+			text-overflow:ellipsis;
+			margin-left:10px;
+			margin-top: 10px;
+			margin-bottom:-10px;
+		}
+    }
 	.first-box-main{
 		position:relative;
 		border:1px solid @border-gray;
