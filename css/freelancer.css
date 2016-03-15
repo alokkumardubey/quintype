@@ -116,32 +116,14 @@ body .first-box-main {
 body .img-border {
   border: 1px solid #e9eaed;
 }
-@media screen and (min-device-width: 531px) and (max-device-width: 1002px) {
-  body .below-text {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: block;
-    position: relative;
-    top: -190px;
-    left: 170px;
-    max-width: 270px;
-  }
-}
-@media screen and (min-device-width: 442px) and (max-device-width: 530px) {
-  body .below-text {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: block;
-    position: relative;
-    top: -190px;
-    left: 170px;
-    max-width: 170px;
-  }
-}
-@media screen and (min-device-width: 442px) and (max-device-width: 441px) {
-  body .below-text {
-    display: none;
-  }
+body .below-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  position: relative;
+  top: -190px;
+  left: 170px;
+  max-width: 270px;
 }
 body p.share-font {
   margin-top: 20px;
