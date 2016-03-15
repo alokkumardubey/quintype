@@ -116,14 +116,43 @@ body .first-box-main {
 body .img-border {
   border: 1px solid #e9eaed;
 }
-body .below-text {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: block;
-  position: relative;
-  top: -190px;
-  left: 170px;
-  max-width: 270px;
+@media screen and (min-device-width: 540px) and (max-device-width: 10000px) {
+  body .below-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    top: -190px;
+    left: 170px;
+    max-width: 270px;
+    display: block;
+  }
+}
+@media screen and (min-device-width: 430px) and (max-device-width: 539px) {
+  body .below-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    top: -190px;
+    left: 170px;
+    max-width: 200px;
+    display: block;
+  }
+}
+@media screen and (min-device-width: 364px) and (max-device-width: 429px) {
+  body .below-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    top: -190px;
+    left: 170px;
+    max-width: 100px;
+    display: block;
+  }
+}
+@media screen and (min-device-width: 0px) and (max-device-width: 363px) {
+  body .below-text {
+    display: none;
+  }
 }
 body p.share-font {
   margin-top: 20px;

@@ -130,17 +130,50 @@ body {
 	.img-border{
 		border:1px solid @border-gray;
 	}
-   
-	.below-text {
-		
-		overflow: hidden;
-		text-overflow:ellipsis;
-		display:block;
-	    position: relative;
-	    top: -190px;
-	    left: 170px;
-	        max-width: 270px;
-	}
+   @media screen and (min-device-width:540px) and (max-device-width: 10000px) { 
+		.below-text {
+			
+			overflow: hidden;
+			text-overflow:ellipsis;
+			display:block;
+		    position: relative;
+		    top: -190px;
+		    left: 170px;
+		    max-width: 270px;
+		    display: block;
+		}
+    }
+    @media screen and (min-device-width:430px) and (max-device-width: 539px) { 
+		.below-text {
+			
+			overflow: hidden;
+			text-overflow:ellipsis;
+			display:block;
+		    position: relative;
+		    top: -190px;
+		    left: 170px;
+		    max-width: 200px;
+		    display: block;
+		}
+    }
+    @media screen and (min-device-width:364px) and (max-device-width: 429px) { 
+		.below-text {
+			
+			overflow: hidden;
+			text-overflow:ellipsis;
+			display:block;
+		    position: relative;
+		    top: -190px;
+		    left: 170px;
+		    max-width: 100px;
+		    display: block;
+		}
+    }
+    @media screen and (min-device-width:0px) and (max-device-width: 363px) { 
+		.below-text {
+		display: none;
+		}
+    }
 	p.share-font {
 	    margin-top: 20px;
 	    margin-left: 20px;
